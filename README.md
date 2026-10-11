@@ -9,6 +9,8 @@
 
 > 🔒 **隐私与安全**：本工具不联网、不上传任何数据。全部数据均来自 Codex / ZCode 本地落盘的权威 API Usage 记录，并以 SQLite 只读模式（`mode=ro`）与文件增量读取方式采集，绝不写入或修改任何原始数据。
 
+![样式预览：紧凑悬浮球与展开 HUD 数据仪表盘](docs/preview.png)
+
 ## 目录
 
 - [功能特性](#功能特性)
@@ -155,11 +157,15 @@ python tps_floating_ball.py --self-test
 
 ```
 codex-zcode-TPS/
-├── tps_floating_ball.py    # 主程序：悬浮球 UI + Codex / ZCode 双引擎数据采集器
-├── run_floating_ball.bat   # Windows 一键后台启动脚本（自动查找 Python）
-├── requirements.txt        # Python 依赖清单
-├── README.md               # 项目说明书
-└── LICENSE                 # MIT 许可证
+├── tps_floating_ball.py     # 主程序：悬浮球 UI + Codex / ZCode 双引擎数据采集器
+├── run_floating_ball.bat    # Windows 一键后台启动脚本（自动查找 Python）
+├── requirements.txt         # Python 依赖清单
+├── docs/
+│   ├── preview.png          # 样式预览头图（紧凑球 + 展开 HUD）
+│   ├── preview_compact.png  # 紧凑悬浮球态预览
+│   └── preview_expanded.png # 展开 HUD 仪表盘态预览
+├── README.md                # 项目说明书
+└── LICENSE                  # MIT 许可证
 ```
 
 ## 常见问题
